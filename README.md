@@ -1,2 +1,84 @@
 # GTNH-Guide-Pack
-Guidance Implementations
+
+Overview
+----
+GTNH-Guide-Pack is a documentation and template repository designed for use with GuideNH — a Markdown-driven, in‑game guide framework for Minecraft 1.7.10. This repository supplies GT-New-Horizons–style guide templates, examples, and authoring workflows so contributors can create polished, searchable, in-game documentation that players can read without leaving Minecraft.
+
+GTNH players currently rely on fragmented external resources — the Wiki, Discord, videos, spreadsheets, and scattered forum posts. There is no single in‑game system that presents long‑form documentation, interactive content, searchable recipes, and structured progression in one place. That fragmentation makes discovery and learning harder for new and returning players.
+
+GuideNH is an in‑game guide framework that solves the fragmentation problem by rendering Markdown content inside Minecraft (1.7.10). It is a framework only — documentation content (machines, progression, tutorials) is written by contributors and distributed as resource packs or mod assets.
+
+Key idea and project links:
+- Repository: https://github.com/ABKQPO/GuideNH
+- Wiki: https://github.com/ABKQPO/GuideNH/wiki
+
+Features
+----
+- Full Markdown rendering (tables, admonitions/alerts, code blocks, lists)
+- Custom interactive tags: item links, tooltips, internal and external links
+- NEI recipe integration embedded in guide pages (look up recipes without leaving the guide)
+- Interactive 3D multiblock previews and model viewers
+- Automatic page discovery via standard resource pack locations (no manifest required)
+- Native multi-language support with fallback to English
+- Live preview and hot‑reload for content authors (fast edit -> test loop)
+
+Quick Start
+----
+1. Clone this repo and read [getting-started.md](https://github.com/ABKQPO/GuideNH/blob/master/wiki/Getting-Started.md) for the authoring basics.
+2. Write guide pages in Markdown under docs/ following the provided templates.
+3. Test locally with GuideNH live preview (see GuideNH repo for preview tool) or package into a resource pack and drop into the client resourcepacks/ directory.
+4. Submit content via PR to this repository or another GuideNH-enabled project.
+
+Quick Start (Server Admin / Pack Maintainer)
+----
+- Include this repo’s docs and assets/ in your modpack resource pack or automation pipeline.
+- Make sure GuideNH is installed on the client and server-side hooks are configured if needed.
+- Use the recommended localization directory to provide translations; the framework will fall back to English.
+
+Authoring Conventions
+----
+- File format: Markdown (UTF-8), begin each page with a top-level H1.
+- Keep pages focused: short introduction, clear objectives, prerequisites, step-by-step instructions, tips, and optional troubleshooting.
+- Use fenced code blocks for commands or JSON (```bash, ```json).
+- Cite sources for recipes and numeric values (mod name + recipe origin).
+- Include image alt text and captions for accessibility.
+
+Localization
+----
+- Place language files under .../_<lang>/ (e.g., en_us.md, zh_cn.md).
+- Use the same filename and folder structure across languages; GuideNH loads per‑page translations and falls back to English.
+
+License
+----
+[![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit.
+- NonCommercial — You may not use the material for commercial purposes.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+For full license text, check LICENSE.txt or go to [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Credits
+----
+Thanks to the GT:NH community for inspiration and to all contributors building documentation and tooling to make GT:NH more accessible.
+
+Thanks to [GuideME](https://github.com/AppliedEnergistics/GuideME), distributed under [LGPL-3.0](https://github.com/AppliedEnergistics/GuideME/blob/main/LICENSE)
+
+This project also uses several open-source libraries, including SnakeYAML, Apache Lucene, Apache Commons Lang, FlatBuffers Java, and JLaTeXMath.
+
+These libraries are distributed under their respective licenses, primarily Apache License 2.0 and GPL v2.
+
+Disclaimer
+----
+This project is a community authored guide pack and will not be included in the official GT:NH release. Respect the licenses of the original modpack and included mods when redistributing content.
+
+GuideNH does not provide the distribution of the server guidance.
