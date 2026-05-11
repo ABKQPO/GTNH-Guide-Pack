@@ -3,7 +3,7 @@ item_ids:
   - guidenh:guide
 navigation:
   title: 首页
-  icon: minecraft:book
+  icon: guidenh:guide
 ---
 
 # 什么是应用能源2（Applied Energistics 2）？
