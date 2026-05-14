@@ -7,5 +7,8 @@ categories:
 - misc ingredients blocks
 item_ids:
 - appliedenergistics2:tile.BlockFluix
+- ae2:fluix_stairs
+- ae2:fluix_wall
+- ae2:fluix_slab
 ---
 

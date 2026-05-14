@@ -7,5 +7,6 @@ categories:
 - devices
 item_ids:
 - appliedenergistics2:item.ItemMultiPart:240
+- ae2fc:part_fluid_import
 ---
 
