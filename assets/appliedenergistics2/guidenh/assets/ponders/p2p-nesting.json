@@ -38,6 +38,19 @@
           "independent": true,
           "text": "一个简单的P2P传输系统，物品、频道与红石信号都被正常传输。",
           "color": "0xFFFFFFFF"
+        },
+        {
+          "type": "line",
+          "fromX": 6.5,
+          "fromY": 0.5,
+          "fromZ": -1,
+          "toX": 2.5,
+          "toY": 0.5,
+          "toZ": -1,
+          "color": "0xFFFFFF00",
+          "arrow": "end",
+          "lineWidth": 2.0,
+          "alwaysOnTop": true
         }
       ]
     },

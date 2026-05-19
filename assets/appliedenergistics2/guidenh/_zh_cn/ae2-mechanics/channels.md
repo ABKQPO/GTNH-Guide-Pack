@@ -1,290 +1,161 @@
 ---
 navigation:
   title: 频道
-  parent: ae2-mechanics-index.md
+  parent: ../ae2-mechanics-index.md
   icon: appliedenergistics2:item.ItemMultiPart:56
 ---
-111
-# Channels
 
-Applied Energistics 2's [ME Networks](me-network-connections.md) require
-Channels to support [devices](../ae2-mechanics/devices.md) which use networked storage, or other network
-services. Think of channels like USB cables to all your devices. A computer only has so many USB ports and can only support
-so many devices connected to it. Most machines, full-block devices, and standard cables can only pass through
-up to 8 channels. You can think of full-block devices and standard cables as a bundle of 8 "channel wires". However, [dense cables](../items-blocks-machines/cables.md#dense-cable) can support up
-to 32 channels. The only other devices capable of transmitting 32 are <ItemLink id="me_p2p_tunnel" />
-and the [Quantum Network Bridge](../items-blocks-machines/quantum_bridge.md). Each time a device uses up a channel, imagine pulling off a usb "wire" from
-the bundle, which obviously means that "wire" isn't available further down the line.
+# 频道
 
-<GameScene zoom="7" interactive={true}>
-  <ImportStructure src="../assets/assemblies/channel_demonstration_1.snbt" />
+# 频道是什么？
 
-  <LineAnnotation color="#33ff33" from="1 .4 .7" to="2.4 .4 .7" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .6 .7" to="2.4 .6 .7" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .4 .6" to="2.6 .4 .6" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .6 .6" to="2.6 .6 .6" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .6 .6" to="2.6 .6 .6" alwaysOnTop={true}/>
+频道是AE网络中的设备占用的一种资源，AE2的[ME网络](me-network-connections.md) 需要通过频道来支持使用网络化存储或其他网络服务的[设备](devices.md)。由[线缆](../items-blocks/cables.md)连接的AE网络中的频道是有限的，每根线缆只能承载有限的频道，当你把一台需要使用频道的设备通过线缆接入网络时，这台设备就会从线缆中占据一个频道，当线缆的频道数量耗尽时，新加入的设备就无法接入AE网络了。
 
-  <LineAnnotation color="#33ff33" from="2.4 .6 .7" to="2.4 .6 1.5" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="2.4 .4 .7" to="2.4 .4 1.5" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="2.6 .6 .6" to="2.6 .6 1.5" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="2.6 .4 .6" to="2.6 .4 1.5" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="2.1 .6 1.5" to="2.4 .6 1.5" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="2.6 .4 1.5" to="2.9 .4 1.5" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="2.6 .6 1.5" to="2.6 .9 1.5" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="2.4 .1 1.5" to="2.4 .4 1.5" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="1 .6 .4" to="3.5 .6 .4" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .4 .4" to="3.5 .4 .4" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="3.5 .6 .4" to="3.5 .9 .4" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="3.5 .1 .4" to="3.5 .4 .4" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="1 .6 .3" to="1.5 .6 .3" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1 .4 .3" to="1.5 .4 .3" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#33ff33" from="1.5 .6 .3" to="1.5 .9 .3" alwaysOnTop={true}/>
-  <LineAnnotation color="#33ff33" from="1.5 .1 .3" to="1.5 .4 .3" alwaysOnTop={true}/>
-
-  <LineAnnotation color="#ff3333" from="3.5 .5 .5" to="5.5 .5 .5" alwaysOnTop={true}>
-  All 8 channels in the cable have been used, so the Drive does not get one.  
+<GameScene zoom="4" background="transparent" width="300" rotateX={20} rotateY={-75}>
+  <ImportStructure src="../assets/structures/channels-channel_count.snbt" />
+  <LineAnnotation
+  points="0.35 0.65 5; 0.35 0.65 4.5;0.35 1.5 4.5"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
   </LineAnnotation>
-
-  <LineAnnotation color="#993333" from="1 .5 .5" to="1.25 .5 .5" alwaysOnTop={true}/>
-  <LineAnnotation color="#993333" from="1.5 .5 .5" to="1.75 .5 .5" alwaysOnTop={true}/>
-  <LineAnnotation color="#993333" from="2 .5 .5" to="2.25 .5 .5" alwaysOnTop={true}/>
-  <LineAnnotation color="#993333" from="2.5 .5 .5" to="2.75 .5 .5" alwaysOnTop={true}/>
-  <LineAnnotation color="#993333" from="3 .5 .5" to="3.25 .5 .5" alwaysOnTop={true}/>
-
-  <DiamondAnnotation pos="3.6 0.5 0.5" color="#ff0000">
-        All 8 channels in the cable have been used, so the Drive does not get one.
-    </DiamondAnnotation>
-
-  <IsometricCamera yaw="15" pitch="30" />
+  <LineAnnotation
+  points="0.35 0.5 5; 0.35 0.5 3.5;0.35 1.5 3.5"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.35 0.35 5; 0.35 0.35 2.5;0.35 1.5 2.5"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.65 0.35 5; 0.65 0.35 4.65;2.5 0.35 4.65"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.65 0.65 5; 0.65 0.65 4.65;1.5 0.65 4.65"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.65 0.35 5; 0.65 0.35 4.35;2.5 0.35 4.35"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.65 0.65 5; 0.65 0.65 4.35;1.5 0.65 4.35"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.5 0.5 5; 0.5 0.5 4.5;2.5 0.5 4.5"
+  color="#00ff00"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.5 0.55 5;0.5 0.55 4.6"
+  color="#ff0000"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+ <LineAnnotation
+  points="0.5 0.55 4.4;0.5 0.55 4"
+  color="#ff0000"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.5 0.55 3.6;0.5 0.55 3.2"
+  color="#ff0000"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.5 0.55 2.8;0.5 0.55 2.4"
+  color="#ff0000"
+  thickness="1"
+  alwaysOnTop={true}>
+  </LineAnnotation>
+  <LineAnnotation
+  points="0.5 0.55 2;0.5 0.55 0.5"
+  color="#ff0000"
+  thickness="1"
+  alwaysOnTop={true}>
+  由于线缆的8个频道已被占满，所以驱动器因没有频道而离线
+  </LineAnnotation>
+  <DiamondAnnotation pos="0.5 0.55 2" color="#ff0000">
+  由于线缆的8个频道已被占满，所以驱动器因没有频道而离线
+  </DiamondAnnotation>
 </GameScene>
 
-An easy way to see how channels are being used and routed through your network is to use [smart cables](../items-blocks-machines/cables.md), which will display on them the paths and usage of channels.
+普通线缆可以承载8个频道，致密线缆可以承载32个频道。一个观察频道的简单方法是使用[智能线缆](../items-blocks/cables.md#智能线缆)，它们会通过自身的纹路与光效显示频道使用情况。
 
-Channels will consume 1⁄128 ae/t per node they transverse, this means that by
-adding a <ItemLink id="controller" /> for a
-network with 8 devices and over 96 nodes your power usage might actually
-decrease power consumption because it changes how channels are allocated.
+# 频道路由
 
-Of note, **CHANNELS HAVE NOTHING TO DO WITH CABLE COLOR**, all cable color does is make cables not connect.
+在有<ItemLink id="appliedenergistics2:tile.BlockController" showIcon="Left"/>的AE网络中，频道的传输需要经过三个步骤:
 
-## Channel Routing
+1.频道会通过最短的路径，从相邻的设备传输到最近的普通线缆上（无论是玻璃线缆、包层线缆或者智能线缆）。  
+2.频道会继续沿着这条普通线缆，传输到最近的致密线缆上。  
+3.频道再通过这条致密线缆，传输到ME控制器。如果最短路径已被占用，那么某些设备可能无法接收到所需的频道。
 
-When using a <ItemLink id="controller" />,
-channels route via 3 steps. They first take the shortest path through adjacent machines to the nearest [normal cable](../items-blocks-machines/cables.md)
-(glass, covered, or smart). They then take the shortest path through that normal cable to the nearest [dense cable](../items-blocks-machines/cables.md)
-(dense or dense smart). They then take the shortest path through that dense cable to the <ItemLink id="controller" />.
-If the shortest path is already maxed out, some [devices](devices.md) may not get their required channels, use
-colored cables, cable anchors and tunnels to your advantage to make sure your channels go in the path you desire.
+可以利用线缆染色、<ItemLink id="appliedenergistics2:item.ItemMultiPart:140" showIcon="Left"/>或<ItemImage id="appliedenergistics2:item.ItemMultiPart:120" yOffset="2" /><ItemLink id="appliedenergistics2:item.ItemMultiPart:120"/>等手段来确保频道能按照预期的路径传输。需要注意的是，颜色并不会影响频道的优先级判定，它只会让不同颜色的线缆互相不连接以起到控制频道传输的作用，不染色的Fluix默认色线缆可以与任何颜色的线缆连接。
 
-For example, in this case some drives don't get channels because although there is enough capacity in the cables, the
-channels try to take the shortest path, overloading some cables while leaving others empty.
+例如下面场景中的线缆形成了回环，频道寻路机制让部分驱动器缺失频道离线。
 
-<GameScene zoom="4" interactive={true}>
-  <ImportStructure src="../assets/assemblies/channel_path_length_issue.snbt" />
-
-  <LineAnnotation color="#33ff33" from="3 .5 1.4" to="0.4 0.5 1.4" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="0.4 .5 1.4" to="0.4 0.5 3.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="0.4 0.5 3.6" to="1.4 0.5 3.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="1.4 0.5 3.6" to="1.4 0.5 5" alwaysOnTop={true} thickness="0.05"/>
-
-  <LineAnnotation color="#33ff33" from="3 0.5 3.6" to="1.6 0.5 3.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="1.6 0.5 3.6" to="1.6 0.5 5" alwaysOnTop={true} thickness="0.05"/>
-
-  <LineAnnotation color="#ff3333" from="3 .5 1.6" to="0.6 .5 1.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#ff3333" from="0.6 .5 1.6" to="0.6 .5 3.4" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#ff3333" from="0.6 .5 3.4" to="1.4 .5 3.4" alwaysOnTop={true} thickness="0.05"/>
-
-  <LineAnnotation color="#ff3333" from="3 .5 3.4" to="1.6 .5 3.4" alwaysOnTop={true} thickness="0.05"/>
-
-  <BoxAnnotation color="#dddddd" min="1.2 0.2 3.2" max="1.8 0.8 3.8" alwaysOnTop={true} thickness="0.05">
-        More than 8 channels attempt to route through here so some are cut off.
-  </BoxAnnotation>
-
-  <IsometricCamera yaw="90" pitch="90" />
-
+<GameScene zoom="2" background="transparent" width="200" rotateX={90} rotateY={-90}>
+    <ImportStructure src="../assets/structures/channels-channel_loop1.snbt" />
 </GameScene>
 
-This can be fixed by more carefully constraining the paths channels can take. Networks should be treelike (or bushlike).
-Loops and ambiguous channel paths should be minimized.
+通过善用线缆染色、石英纤维与线缆锚严格地限制频道的走向来解决上述问题。网络结构应呈树状，尽量减少循环和模糊的网状频道路径。
 
-<GameScene zoom="4" interactive={true}>
-  <ImportStructure src="../assets/assemblies/channel_path_length_issue_fix.snbt" />
-
-  <LineAnnotation color="#33ff33" from="3 .5 1.4" to="0.4 0.5 1.4" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="0.4 .5 1.4" to="0.4 0.5 5.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="0.4 0.5 5.6" to="1 0.5 5.6" alwaysOnTop={true} thickness="0.05"/>
-
-  <LineAnnotation color="#33ff33" from="3 0.5 3.6" to="1.6 0.5 3.6" alwaysOnTop={true} thickness="0.05"/>
-  <LineAnnotation color="#33ff33" from="1.6 0.5 3.6" to="1.6 0.5 5" alwaysOnTop={true} thickness="0.05"/>
-
-  <IsometricCamera yaw="90" pitch="90" />
-
+<GameScene zoom="2" background="transparent" width="200" rotateX={90} rotateY={-90}>
+    <ImportStructure src="../assets/structures/channels-channel_loop2.snbt" />
 </GameScene>
 
-## Ad-Hoc Networks
 
-A Network without a <ItemLink id="controller" />
-is considered to be Ad-Hoc, and can support up to 8 channel using devices.
-Once you exceed 8 devices the network's channel using devices will shutdown,
-you can either remove devices, or add a <ItemLink id="controller" />.
+# 网络设计
 
-Unlike with controllered networks, [smart cables](../items-blocks-machines/cables.md) on ad-hoc networks will show the number
-of channels in use network-wide instead of the number of channels flowing through that specific cable.
+如上文所述，设计AE网络时应该尽量让网络拓扑呈分叉树状：通过致密线缆作为主干道导出ME控制器的频道，再用普通线缆从致密线缆中分离频道来供给设备。每组普通线缆应该只负责至多8台设备，更多的设备应另起一组普通线缆从致密线缆中分出频道。
 
-While using ad-hoc networks each device will
-use 1 channel network wide, this is very different from how <ItemLink id="controller" /> allocate channels based on
-shortest route.
+以下是一个<Color id="RED">结构较差</Color>的网络设计示意，网络中充满了环形结构————线缆是环形结构、设备与设备直接传输频道也构成环形结构，最终整个网络几乎没有可读性，难以分析频道走向，同时也会导致部分组件因无频道而离线。
 
-## Design
-
-As mentioned before in [channel routing](channels.md#channel-routing), it's best to design your network in a treelike structure, with dense cables branching out from the controller, regular cables
-branching out from the dense, and [devices](../ae2-mechanics/devices.md) in clusters of 8 or fewer on the regular cables.
-
-Here is an example of what not to do:
-
-Following the channel paths,
-
-1. Immediately exiting the controller to the right, we're bottlenecked to 8 channels because the drive acts like a normal cable.
-However since we're not using a smart cable here we cannot see how many channels are in use. 8 channels left.
-2. The drive takes a channel.
-7 channels left.
-3. 2 channels go up to the terminals.
-5 channels left.
-4. Continuing right, the interface takes another channel.
-4 channels left.
-5. 1 channel goes up to the pattern provider.
-3 channels left.
-6. Continuing right, 1 channel goes up to the import bus.
-2 channels left.
-7. The cluster of pattern providers feeding assemblers only gets 2 channels, so 2 of the providers do not get channels.
-
-Ultimately the error is in bottlenecking the channels and not thinking through how channels will be distributed.
-
-<GameScene zoom="4" interactive={true}>
-  <ImportStructure src="../assets/assemblies/bad_network_structure.snbt" />
-
-<LineAnnotation color="#33ff33" from="6.5 .5 1.5" to="6 .5 1.5" alwaysOnTop={true} thickness="0.4">
-  32 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="6 .5 1.5" to="5.5 .5 1.5" alwaysOnTop={true} thickness="0.2">
-  8 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="5.5 .5 1.5" to="5.5 1.5 1.5" alwaysOnTop={true} thickness="0.1">
-  2 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="5.5 .5 1.5" to="5.5 .3 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="5.5 1.5 1.5" to="5.5 2.5 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="5.5 2.5 1.5" to="5.5 2.5 1.1" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="5.5 .5 1.5" to="4.5 .5 1.5" alwaysOnTop={true} thickness="0.158">
-  5 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="4.5 .5 1.5" to="4.5 .3 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="4.5 .5 1.5" to="4.5 1.5 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="4.5 .5 1.5" to="3.5 .5 1.5" alwaysOnTop={true} thickness="0.122">
-  3 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="3.5 .5 1.5" to="3.5 2.5 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="3.5 2.5 1.5" to="3.7 2.5 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="3.5 .5 1.5" to="1.5 .5 1.5" alwaysOnTop={true} thickness="0.1">
-  2 channels
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="1.5 0.5 1.5" to="1.5 0.3 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="1.5 0.5 1.5" to="0.5 0.5 1.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#33ff33" from="0.5 0.5 1.5" to="0.5 0.5 0.5" alwaysOnTop={true} thickness="0.071">
-  1 channel
-</LineAnnotation>
-
-<LineAnnotation color="#ff3333" from="0.5 1.5 1.5" to="0.5 1.3 1.5" alwaysOnTop={true} thickness="0.071">
-  no channels
-</LineAnnotation>
-
-<LineAnnotation color="#ff3333" from="1.5 1.5 0.5" to="1.5 1.3 0.5" alwaysOnTop={true} thickness="0.071">
-  no channels
-</LineAnnotation>
-
-  <IsometricCamera yaw="195" pitch="30" />
+<GameScene zoom="4" background="transparent" width="400" rotateX={30} rotateY={100}>
+    <ImportStructure src="../assets/structures/channels-bad_design.snbt" />
 </GameScene>
 
----
-
-Here is an example of a good structure:
-
-<GameScene zoom="2.5" interactive={true}>
-  <ImportStructure src="../assets/assemblies/treelike_network_structure.snbt" />
-
-    <BoxAnnotation color="#dddddd" min="6.9 0 4.9" max="9.1 4 7.1" thickness="0.05">
-        Notice that the pattern providers are in separate groups of 8.
+以下是一个<Color id="GREEN">结构良好</Color>的网络设计示例：
+<GameScene zoom="2" background="transparent" width="400" rotateY={-115} rotateX={30}>
+    <ImportStructure src="../assets/structures/channels-good_design.snbt" />
+    <BoxAnnotation min="11 0 8" max="13 1 5" color="#00ff1a" thickness="1">
+      使用不同颜色的线缆来分区，便于识别并且放置串联。
     </BoxAnnotation>
-
-    <BoxAnnotation color="#dddddd" min="5 4 4" max="8 5 5" thickness="0.05">
-        Two regular cables full of channels coming together mean you need a dense cable.
+    <BoxAnnotation min="5 0 4" max="3 4 6" color="#00ff1a" thickness="1">
+      注意到此处一根普通线缆刚好承载8个接口的频道，没有造成频道缺少或浪费（分子装配室不占用频道）。
     </BoxAnnotation>
-
-    <BoxAnnotation color="#dddddd" min="5 0 13" max="8 1 14" thickness="0.05">
-        Different cable colors are used to prevent adjacent cables from connecting.
-    </BoxAnnotation>
-
-
-  <IsometricCamera yaw="315" pitch="30" />
 </GameScene>
 
-## Channel Modes
+# 自组织网络
 
-AE2 10.0.0 for Minecraft 1.18 introduces new options to change how AE2 channels behave in your world.
-There's a new configuration option in the general section (`channels`) which controls this option, and a new in-game
-command for operators to change the mode and the config from inside the game. The command is `/ae2 channelmode <mode>`
-to change it and `/ae2 channelmode` to show the current mode. When the mode is changed in-game, all existing grids will
-reboot and use the new mode immediately.
+没有ME控制器的网络属于临时的自组织网络，最多可以支持8个设备的连接。一旦连接的设备数量超过8个，不像正常网络那样只有超出数量部分的设备离线，而是整个网络都会失效。此时，要么移除部分设备，要么添加一个 ME 控制器。
 
-This resurrects and improves upon the option that was available in Minecraft 1.12 and introduces better options for
-players that just want a little more laid back gameplay but don't want the mechanic to be removed entirely.
+与正常网络不同，自组织网络中的任意位置的智能线缆都会显示整个网络中正在使用的总通道数量，而不是像普通网络那样只显示通过某根特定线缆的通道数量。实际上，在自组织网络中，每个设备都会占用整个网络每一根线缆的的一个频道。这与ME控制器根据最短路径来分配频道的方式截然不同。也就是说在自组织网络中，整个网络均匀的分布了所有设备使用的频道，并没有频道传输路径这种形式。
 
-The following table lists the available modes in both the configuration file and command.
-
-| Setting    | Description                                                                                                                                                                                                                               |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `default`  | The standard mode with the channel capacities of cable and ad-hoc networks as described throughout this website                                                                                                                           |
-| `x2`       | All channel capacities are doubled (16 on normal cable, 64 on dense cable, ad-hoc networks support 16 channels)                                                                                                                           |
-| `x3`       | All channel capacities are tripled (24 on normal cable, 92 on dense cable, ad-hoc networks support 24 channels)                                                                                                                           |
-| `x4`       | All channel capacities are quadrupled (32 on normal cable, 128 on dense cable, ad-hoc networks support 32 channels)                                                                                                                       |
-| `infinite` | All channel restrictions are removed. Controllers still reduce the power consumption of grids *significantly*. Smart cables will only toggle between completely off (no channels carried) and completely on (1 or more channels carried). |
+<FloatingImage src="../assets/images/channels_normal_network.png"  wrap="top-bottom" align="left"  width="300" title="普通网络" >
+  <ImageAnnotation>
+  普通网络
+  </ImageAnnotation>
+</FloatingImage>
+<FloatingImage src="../assets/images/channels_ad-hoc_network.png"  wrap="top-bottom" align="left"  width="300" title="自组织网络" >
+  <ImageAnnotation>
+  自组织网络
+  </ImageAnnotation>
+</FloatingImage>
