@@ -4,6 +4,7 @@ navigation:
   icon: ae2fc:walrus
   position: 0
   priority: 0
+  recommended: 0
 ---
 
 # GregTech: New Horizons

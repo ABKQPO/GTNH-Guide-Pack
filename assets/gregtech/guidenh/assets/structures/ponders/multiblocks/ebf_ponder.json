@@ -1,5 +1,5 @@
 {
-  "totalTime": 600,
+  "totalTime": 680,
   "keyframes": [
     {
       "time": 0,
@@ -16,7 +16,7 @@
       "annotations": [
         {
           "type": "text",
-          "text": "The Electric Blast Furnace is your first electric multiblock, used for new materials that require higher heat levels.",
+          "text": "The Electric Blast Furnace is your first electric multiblock, used to blast new materials that require higher heat levels.",
           "independent": true,
           "maxWidth": 200,
           "color": "0xFFE0E0E0"
@@ -185,7 +185,7 @@
           "x": 1.5,
           "y": 4.0,
           "z": 1.5,
-          "text": "The top layer is a 3x3 of casings with a Muffler Hatch in the very center to vent pollution. An output hatch can also be optionally placed to capture it.",
+          "text": "The top layer is a 3x3 of casings with a Muffler Hatch in the very center to vent pollution.",
           "maxWidth": 200,
           "color": "0xFF44AAFF",
           "connectorSide": "bottom"
@@ -194,6 +194,25 @@
     },
     {
       "time": 430,
+      "label": "Gas Recovery",
+      "camera": {
+        "rotY": 315.0
+      },
+      "blockChanges": [
+        { "x": 1, "y": 3, "z": 2, "block": "gregtech:gt.blockmachines:61" }
+      ],
+      "annotations": [
+        {
+          "type": "text",
+          "text": "Optionally, you can also add an output hatch on the top layer to capture gas from your muffler hatch.",
+          "independent": true,
+          "maxWidth": 200,
+          "color": "0xFFE0E0E0"
+        }
+      ]
+    },
+    {
+      "time": 510,
       "label": "Rain Protection",
       "camera": {
         "rotY": 225.0,
@@ -256,7 +275,7 @@
       ]
     },
     {
-      "time": 520,
+      "time": 600,
       "label": "Operation",
       "camera": {
         "rotX": 25.0,
@@ -284,7 +303,7 @@
         },
         {
           "type": "text",
-          "text": "Supply power and items, ensure maintenance is fixed, and the EBF will begin smelting!",
+          "text": "Supply power and items, ensure maintenance is fixed, and the EBF will begin blasting!",
           "independent": true,
           "yOffset": 60,
           "maxWidth": 200,
@@ -293,7 +312,7 @@
       ]
     },
     {
-      "time": 600,
+      "time": 680,
       "camera": {
         "rotY": 225.0
       }
