@@ -74,12 +74,13 @@ Use the <ItemImage id="structurelib:item.structurelib.constructableTrigger" /> [
 > [!WARNING]
 > Multi-amp and laser [energy hatches]() are not supported.
 
-<GameScene interactive={true} wrap="square" align="right" width="280" height="200" zoom="1.5">
+## Wallsharing
+
+<GameScene interactive={true} width="240" height="240" zoom="1.2" wrap="square" align="right" >
   <ImportStructure src="/assets/structures/quad_ebf.snbt" />
+  <ImportStructure src="/assets/structures/side_qebf.snbt" x="-8" />
   <RemoveBlocks id="Railcraft:residual.heat" />
 </GameScene>
-
-## Wallsharing
 
 EBFs may [wallshare]() each of their sides to save on casings, heating coils, and buses/hatches. 
 Overlapping EBFs side-by-side is the most effective and highly recommended because it saves a significant amount of 
@@ -89,6 +90,8 @@ For example, a quad-shared EBF requires only 42 heating coils to build instead o
 The only downside is the difficulty in upgrading heating coils because they must all be the same tier for the structure(s) to form. 
 
 Sharing a maintenance hatch, output bus, and input hatch is also quite useful, but do NOT share energy hatches because the EBF frequently needs to be overclocked to a higher voltage tier which uses the maximum 4A from two energy hatches. Splitting that between two machines is simply not possible and causes one to power fail. 
+
+To easily reach the buses and hatches without having to run your logistics under the machine, you may choose to rotate the controller block 90 degrees with a wrench and build the quad EBF sideways.
 
 > [!CAUTION]
 > There are a few potential hazards for GregTech multiblocks that could cause them to power fail or even ++**explode**++. 
