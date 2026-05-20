@@ -1,10 +1,10 @@
 ---
 navigation:
-  title: "GT New Horizons"
-  icon: ae2fc:walrus
+  title: "GregTech: New Horizons"
+  icon: dreamcraft:CoinDonation
   position: 0
   priority: 0
-  recommended: 0
+  recommended: 1
 ---
 
 # GregTech: New Horizons

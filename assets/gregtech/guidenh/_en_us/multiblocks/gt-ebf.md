@@ -29,7 +29,7 @@ quest_ids:
     \-- **[Pollution]()**:          400 gibbl/s
 ```
 * [Wiki Page](https://wiki.gtnewhorizons.com/wiki/Electric_Blast_Furnace)
-* <QuestLink id="AAAAAAAAAAAAAAAAAAAATQ==" />
+* Quest: <QuestLink id="AAAAAAAAAAAAAAAAAAAATQ==" />
 
 The <ItemImage id="gregtech:gt.blockmachines:1000" /> **Electric Blast Furnace** (**EBF**) is an [LV]()
 tier [multiblock](/multiblocks/index.md) for smelting dusts into ingots at a higher heat than standard furnaces. 
@@ -135,7 +135,7 @@ The [heating coils]() built into the structure determine the heat capacity of th
 
 For example, a cupronickel EBF has a heat capacity of 1,801K which is more than enough to smelt steel (1,000K) and aluminium (1,300K), but **NOT** <ItemImage id="gregtech:gt.metaitem.01:11856" /> silicon solar grade (2,273K). There is also a +100K heat bonus for every voltage tier past [MV](), as seen in the following chart:
 
-<LineChart title="Heat Bonuhttps://wwguw.startpage.com/sp/searchs" categories="LV,MV,HV,EV,IV,LuV,ZPM,UV,UHV,UEV,UIV,UMV,UXV,MAX,MAX+" yAxisUnit="K" width="600">
+<LineChart title="Heat Bonus" categories="LV,MV,HV,EV,IV,LuV,ZPM,UV,UHV,UEV,UIV,UMV,UXV,MAX,MAX+" yAxisUnit="K" width="600">
   <Series name="Heat" data="0,0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300" color="#E15759"/>
 </LineChart>
 
