@@ -1,4 +1,6 @@
 ---
+item_ids:
+  - gregtech:gt.blockmachines:15753
 navigation:
   title: Vis-Regulated Maintenance Hatch
   parent: magic.md
