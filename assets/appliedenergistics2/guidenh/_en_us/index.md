@@ -1,6 +1,7 @@
 ---
 navigation:
-  title: Index/Table of Contents
+  title: Applied Energistics 2
+  icon: guidenh:guide
   position: 0
 ---
 
