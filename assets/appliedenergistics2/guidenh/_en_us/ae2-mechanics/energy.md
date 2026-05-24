@@ -9,8 +9,7 @@ navigation:
 
 Your network will require energy to run. Networks have a pool of energy that [devices](../ae2-mechanics/devices.md) directly pull from, and
 <ItemLink id="appliedenergistics2:tile.BlockVibrationChamber" showIcon="left" />s, <ItemLink id="appliedenergistics2:tile.BlockEnergyAcceptor" showIcon="left" />s (and <ItemLink id="appliedenergistics2:tile.BlockController" showIcon="left" />s) add to. You can
-see the energy statistics for a network by right-clicking anywhere on it with a <ItemLink id="appliedenergistics2:item.ToolNetworkTool" showIcon="left" /> or by
-right-clicking the network's controller, if it has one. This network-wide storage and distribution  means that
+see the energy statistics for a network by right-clicking anywhere on it with a <ItemLink id="appliedenergistics2:item.ToolNetworkTool" showIcon="left" />. This network-wide storage and distribution  means that
 there are no energy transfer rate limits, so devices can pull arbitrarily high amounts of energy and
 energy acceptors can intake at functionally unlimited speed, only limited by your energy storage.
 
