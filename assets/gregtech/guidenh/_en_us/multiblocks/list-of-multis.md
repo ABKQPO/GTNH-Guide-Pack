@@ -1,7 +1,7 @@
 ---
 navigation:
     title: List of Multiblocks
-    parent: ./index.md
+    parent: ./multiblocks-index.md
     position: -1
 ---
 
@@ -9,85 +9,85 @@ Listed by tier first buildable.
 
 <details><summary>0 - Stone Age</summary>
 
-<ItemImage id="gregtech:gt.blockmachines:236" /> [Coke Oven]()
+<ItemLink id="gregtech:gt.blockmachines:236" showIcon="left" /> [Coke Oven]()
 
 </details>
 
 <details><summary>0.5 - Steam Age</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>1 - LV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>2 - MV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>3 - HV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>4 - EV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>5 - IV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>6 - LuV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>7 - ZPM</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>8 - UV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>9 - UHV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>10 - UEV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>11 - UIV</summary>
 
-gg
+wip
 
 </details>
 
 <details><summary>12 - UMV+</summary>
 
-gg
+wip
 
 </details>
 
@@ -105,7 +105,7 @@ gg
 
 | **Multiblocks with Mixed Overclocks** |
 | :--- |
-| <ItemImage id="gregtech:gt.blockmachines:1000" /> [Electric Blast Furnace](/multiblocks/gt-ebf.md) \| [Mega Electric Blast Furnace]() \| [Mega Vacuum Freezer]() \| [Volcanus]() \| [Zyngen]() \| [Utupu-Tanuri]() \| [Component Assembly Line]() \| [PCB Factory]() \| [Nano Forge]() \| [Draconic Evolution Fusion Crafter]() \| [Dimensionally Transcendent Plasma Forge]() |
+| <ItemImage id="gregtech:gt.blockmachines:1000" showIcon="left"/> [Electric Blast Furnace](/multiblocks/gt-ebf.md) \| [Mega Electric Blast Furnace]() \| [Mega Vacuum Freezer]() \| [Volcanus]() \| [Zyngen]() \| [Utupu-Tanuri]() \| [Component Assembly Line]() \| [PCB Factory]() \| [Nano Forge]() \| [Draconic Evolution Fusion Crafter]() \| [Dimensionally Transcendent Plasma Forge]() |
 
 | **Multiblocks with No Overclocks** |
 | :--- |

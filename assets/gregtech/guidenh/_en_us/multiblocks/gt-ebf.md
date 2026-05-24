@@ -3,7 +3,7 @@ item_ids:
     gregtech:gt.blockmachines:1000
 navigation:
     title: Electric Blast Furnace
-    parent: index.md
+    parent: multiblocks-index.md
     icon: gregtech:gt.blockmachines:1000
 quest_ids:
     - AAAAAAAAAAAAAAAAAAAATQ
@@ -22,17 +22,17 @@ quest_ids:
 |-- **Source**:         [GregTech5u](https://github.com/GTNewHorizons/GT5-Unofficial/blob/master/src/main/java/gregtech/common/tileentities/machines/multi/MTEElectricBlastFurnace.java)
 |-- **Machine Type**:   Blast Furnace
 |-- **Tier**:           [LV]()
-\-- **Details**
-    |-- **Size**:                   3x3x4
-    |-- **[Energy Hatches]()**:     Standard
-    |-- **[Overclocks]()**:         Imperfect
-    \-- **[Pollution]()**:          400 gibbl/s
+|-- **Details**
+|   |-- **Size**:                   3x3x4
+|   |-- **[Energy Hatches]()**:     Standard
+|   |-- **[Overclocks]()**:         Imperfect
+|   \-- **[Pollution]()**:          400 gibbl/s
+|-- [Wiki Page](https://wiki.gtnewhorizons.com/wiki/Electric_Blast_Furnace)
+\-- Quest: <QuestLink id="AAAAAAAAAAAAAAAAAAAATQ==" />
 ```
-* [Wiki Page](https://wiki.gtnewhorizons.com/wiki/Electric_Blast_Furnace)
-* Quest: <QuestLink id="AAAAAAAAAAAAAAAAAAAATQ==" />
 
 The <ItemImage id="gregtech:gt.blockmachines:1000" /> **Electric Blast Furnace** (**EBF**) is an [LV]()
-tier [multiblock](/multiblocks/index.md) for smelting dusts into ingots at a higher heat than standard furnaces. 
+tier [multiblock](multiblocks-index.md) for smelting dusts into ingots at a higher heat than standard furnaces. 
 
 The EBF is a direct upgrade from the <ItemImage id="gregtech:gt.blockmachines:140" /> [Bricked Blast Furnace]() because it runs off electricity instead of burnable fuels and can process higher tier materials. 
 
@@ -43,7 +43,7 @@ The EBF follows standard multiblock behaviors such as releasing pollution from a
 occasionally requiring [maintenance](), and voiding ingredients on power fail. 
 Items and fluids are inserted/extracted through buses and hatches, respectively.
 
-<RecipesFor id="gregtech:gt.blockmachines:1000"/>
+<RecipesFor id="gregtech:gt.blockmachines:1000" input="gregtech:gt.blockcasings:11" />
 
 # Construction
 The EBF is built with <ItemImage id="gregtech:gt.blockcasings:11" /> **Heat Proof Machine Casings** on the top and bottom layers and heating coils in the middle two layers. 

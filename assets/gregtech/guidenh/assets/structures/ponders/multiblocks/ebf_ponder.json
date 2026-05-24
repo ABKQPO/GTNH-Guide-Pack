@@ -198,9 +198,6 @@
       "camera": {
         "rotY": 315.0
       },
-      "blockChanges": [
-        { "x": 1, "y": 3, "z": 2, "block": "gregtech:gt.blockmachines:61" }
-      ],
       "annotations": [
         {
           "type": "text",

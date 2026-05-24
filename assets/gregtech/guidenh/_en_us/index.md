@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "GregTech: New Horizons"
+  title: "(2.9.x) GT: New Horizons"
   icon: dreamcraft:CoinDonation
   position: 0
   priority: 0

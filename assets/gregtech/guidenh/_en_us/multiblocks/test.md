@@ -1,7 +1,7 @@
 ---
 navigation:
     title: test
-    parent: index.md
+    parent: multiblocks-index.md
 ---
 
 <details>
