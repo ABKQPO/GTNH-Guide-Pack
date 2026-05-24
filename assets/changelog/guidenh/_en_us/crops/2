@@ -1,0 +1,70 @@
+{
+  "totalTime": 600,
+  "keyframes": [
+    {
+      "time": 0,
+      "label": "Automation Setup",
+      "camera": {
+        "zoom": 4.0,
+        "rotX": 20.0,
+        "rotY": 100.0,
+        "rotZ": 0.0,
+        "offX": 0.0,
+        "offY": 0.0
+      },
+      "layer": null,
+      "annotations": [
+        {
+          "type": "text",
+          "text": "One of the easiest methods of automation is the **Crop Manager**. The LV version works in an **11x5x11** region",
+          "independent": true,
+          "yOffset": -80,
+          "maxWidth": 180,
+          "color": "0xFFCCCCFF"
+        }
+      ]
+    },
+    {
+      "time": 120,
+      "label": "Soil Setup",
+      "camera": {
+        "rotY": 140
+      },
+      "layer": null,
+      "annotations": [
+        {
+          "type": "text",
+          "text": "Add one layer of sub-soil blocks (if required)",
+          "independent": true,
+          "yOffset": -80,
+          "maxWidth": 180,
+          "color": "0xFFFF0000"
+        },
+        {
+          "type": "box",
+          "minX": 0.05, "minY": 0.05, "minZ": 0.05,
+          "maxX": 4.95, "maxY": 0.95, "maxZ": 4.95,
+          "color": "0xFFFF0000",
+          "lineWidth": 1.5,
+          "alwaysOnTop": false
+        },
+        {
+          "type": "text",
+          "text": "Add a second layer with the correct soil type for your plants. These <Color id='GREEN'>Bauxia</Color> plants need Stone!",
+          "independent": true,
+          "yOffset": 80,
+          "maxWidth": 180,
+          "color": "0xFF00FF00"
+        },
+        {
+          "type": "box",
+          "minX": 0.05, "minY": 1.05, "minZ": 0.05,
+          "maxX": 4.95, "maxY": 1.95, "maxZ": 4.95,
+          "color": "0xFF00FF00",
+          "lineWidth": 1.5,
+          "alwaysOnTop": false
+        }
+      ]
+    }
+  ]
+}
