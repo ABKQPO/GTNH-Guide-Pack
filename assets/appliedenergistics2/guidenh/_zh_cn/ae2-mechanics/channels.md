@@ -86,7 +86,7 @@ navigation:
   alwaysOnTop={true}>
   </LineAnnotation>
   <LineAnnotation
-  points="0.5 0.55 2;0.5 0.55 0.5"
+  points="0.5 0.55 2;0.5 0.55 1"
   color="#ff0000"
   thickness="1"
   alwaysOnTop={true}>
