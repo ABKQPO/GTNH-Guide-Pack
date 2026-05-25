@@ -4,7 +4,6 @@ navigation:
   parent: /index.md
   icon: cropsnh:reinforcedSpade
 ---
-> 
 # CropsNH
 Sick of dealing with the random annoying traits of IC2 crops? Well now you don't have to! Introducing <Color id="GREEN">CropsNH</Color>!
 
