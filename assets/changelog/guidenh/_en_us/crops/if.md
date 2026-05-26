@@ -15,7 +15,7 @@ date: 2026-05-24
 # Industrial Farm
 At a certain point in the game, your little old crop managers start struggling if you're really trying to push them to their limits. CropsNH comes with its own solution, the <Color id="GREEN">Industrial Farm</Color>
 
-<GameScene wrap="square">
+<GameScene wrap="square" align="right">
   <ImportStructureLib controller="gregtech:gt.blockmachines:28055" />
 </GameScene>
 The <Color id="GREEN">Industrial Farm</Color> is an MV tier multiblock for the mass farming and harvesting of crops. The <Color id="GREEN">Industrial Farm</Color> can only grow a single type of crop at a time, but the capacity increases significantly with the tier of the seed beds and the length of the machine. The <Color id="GREEN">Industrial Farm</Color> simulates the growth of crops inside the machine as if they were placed physically in the world. The only inputs are water, power, and potentially fertilizer if there is a fertilization unit present. The outputs scale with the crop's average stats, any environmental bonuses, and upgrade unit bonuses. There are 5 unique upgrade units to choose from and 1-12 upgrade slots based on the length of the machine, but they must match the tier of the seed beds exactly. 

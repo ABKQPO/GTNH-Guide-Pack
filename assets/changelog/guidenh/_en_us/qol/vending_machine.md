@@ -11,6 +11,11 @@ date: 2026-05-16
 ---
 
 # Vending Machine
+<GameScene wrap="square" align="right">
+  <ImportStructureLib controller="gregtech:gt.blockmachines:2741"/>
+</GameScene>
+
+ 
 Are you tired of having chests on chests full of random coins you don't want or need yet? Well look no further! Introducing the <Color id="GREEN">Vending Machine</Color> <ItemImage id="gregtech:gt.blockmachines:2741"/>! 
 
 
@@ -25,9 +30,3 @@ For team players, the wallet is inherently linked, and you can toggle to use eit
 
 ## AE2 Integration
 Trades and coin storage are now also fully integrated with the new <Color id="GREEN">ME Vending Uplink</Color> <ItemImage id="gregtech:gt.blockmachines:2742"/>
-# Structure Preview:
-<GameScene>
-  <ImportStructureLib controller="gregtech:gt.blockmachines:2741"/>
-</GameScene>
-
- 
