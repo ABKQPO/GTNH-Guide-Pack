@@ -78,12 +78,14 @@ Though an <Color id="GREEN">LHC</Color> can *technically* be wallshared, it is n
 ## Usage:
 The <Color id="GREEN">LHC</Color> has two modes of use, <Color id="BLUE">Accelerator Mode</Color> and <Color id="RED">Collider Mode</Color>. The controller includes a GUI for configuring a Target Beam Energy (eV), and Max Acceleration Cycles. These parameters cannot be changed in operation of the machine, or it will shut down.
 
+In the GUI, there are two extra panels that can be used. One is a calculator, allowing the user to tinker with different hypothetical input and target values. The other is a Particle Probability Table, where a target Collision Energy can be provided, and probabilities of each particle are given for each module on the LHC.
+
 ### Accelerator Mode:
 The <Color id="BLUE">Accelerator Mode</Color> is used to accelerate the beam in the smaller <Color id="GREEN">LHC</Color> ring. It increases the energy stored in the beam by the following equation, until either the target beam energy is reached, or the maximum number of cycles is reached. This operation runs once per second
 
-<Latex formula="\text{Beam Energy} = \text{EU Consumed in cycle} \times 0.1\text{eV}"/>
+<Latex formula="\text{Beam Energy Increase}  \text{EU Consumed in cycle} \times 0.1\text{eV}"/>
 
-If the target beam energy is reached, the beam rate is multiplied by 1.3. The power of the machine starts at 1A of UV per beam rate, and increases quadratically with the number of completed cycles as below. When the target beam cycle count is reached, the mode will automatically switch to <Color id="RED">Collider Mode</Color>. Since the power scales based on the cycles, the more cycles ran the closer the machine gets to being a perfect 4/4 overclock
+If the target beam energy is reached, the beam rate is multiplied by 1.3 repeatedly on subsequent cycles. The power of the machine starts at 1A of UV per beam rate, and increases quadratically with the number of completed cycles as below. When the target beam cycle count is reached, the mode will automatically switch to <Color id="RED">Collider Mode</Color>. Since the power scales based on the cycles, the more cycles ran the closer the machine gets to being a perfect 4/4 overclock
 
 <Latex formula="\text{Power} = R_0 \times a^N \times N^2">
   Where:
