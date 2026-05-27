@@ -9,5 +9,6 @@ item_ids:
 - appliedenergistics2:tile.BlockEnergyCell
 - appliedenergistics2:tile.BlockDenseEnergyCell
 - appliedenergistics2:tile.BlockCreativeEnergyCell
+- appliedenergistics2:item.ItemMultiPart:690
 ---
 
