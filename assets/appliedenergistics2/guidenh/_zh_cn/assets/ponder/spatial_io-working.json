@@ -7,11 +7,22 @@
             "createEntities": [
                 {
                     "ref": "pig",
+                    "sceneEntityId": "pig",
                     "id": "minecraft:pig",
                     "x": 2.5,
                     "y": 2.0,
                     "z": 2,
                     "nbt": "{Pos:[2.5d,2.0d,2d],Rotation:[0:180f,1:0f],CustomName:\"哼哼，哼唧^_^\"}"
+                },
+                {
+                    "ref": "rider",
+                    "sceneEntityId": "rider",
+                    "id": "player",
+                    "name": "ArtherSnow",
+                    "x": 2.5,
+                    "y": 2.3,
+                    "z": 2,
+                    "mount": "pig"
                 },
                 {
                     "ref": "player",
@@ -61,6 +72,11 @@
             "modifyEntityNBT": [
                 {
                     "ref": "pig",
+                    "path": "Pos",
+                    "value": "[11.5d,100.0d,2d]"
+                },
+                {
+                    "ref": "rider",
                     "path": "Pos",
                     "value": "[11.5d,100.0d,2d]"
                 },
@@ -133,6 +149,11 @@
                     "ref": "pig",
                     "path": "Pos",
                     "value": "[11.5d,2.0d,2d]"
+                },
+                {
+                    "ref": "rider",
+                    "path": "Pos",
+                    "value": "[11.5d,2.3d,2d]"
                 },
                 {
                     "ref": "player",
