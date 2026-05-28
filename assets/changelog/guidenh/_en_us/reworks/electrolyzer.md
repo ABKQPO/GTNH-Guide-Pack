@@ -21,7 +21,7 @@ The <Color id="GREEN">Industrial Electrolyzer</Color> is an IV tier multiblock f
 <br clear="all"/>
 
 > [!NOTE]
-> The only change from previous version (aside from the structure itself) is that it now features 4 parallels. That will be all!
+> The only change from previous version (aside from the structure itself) is that it now features 4 parallels per Voltage Tier. That will be all!
 
 ## Construction
 The <Color id="GREEN">Industrial Electrolyzer</Color> has no tiered components. Buses/hatches may replace any electrolyzer casing anywhere on the structure. Multi-amp and laser energy hatches are not supported, but there can be multiple regular energy hatches for overclocking. Use the <ItemLink id="structurelib:item.structurelib.constructableTrigger" /> <ItemImage id="structurelib:item.structurelib.constructableTrigger" /> to visualize/build the structure.

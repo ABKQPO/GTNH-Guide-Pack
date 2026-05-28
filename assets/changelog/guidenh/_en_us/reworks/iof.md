@@ -17,7 +17,6 @@ date: 2026-05-23
   <ImportStructureLib controller="gregtech:gt.blockmachines:15564"/>
 </GameScene>
 The <Color id="GREEN">Integrated Ore Factory (IOF)</Color> is a UHV tier multiblock that does all ore processing in a single step. It is designed to completely replace any existing ore processing setups, improve overall throughput, and save on lag. The <Color id="GREEN">IOF</Color> is unlocked shortly after the <ItemLink id="gregtech:gt.blockmachines:14003" /> which is when the player begins accumulating a massive amount of ore and needs an easier/faster way to process it all into dusts. The <Color id="GREEN">IOF</Color> supports all ore variants (crushed, purified, etc.) and can even process different recipes simultaneously if there are enough parallels available. The total number of parallels scales linearly with the input power and has no upper limit. Byproducts are generated based on the current mode of the <Color id="GREEN">IOF</Color>. There are seven modes in total for the seven different ore processing paths (sifting, ore washing, chemical bathing, etc). 
-
 <br clear="all"/>
 
 > [!NOTE]

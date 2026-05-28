@@ -111,3 +111,5 @@ Once your beams are made, you can use beamline pipes to route them to their dest
 
 ----------
 For a more detailed look at both the LHC, and the accompanying Beam Crafter, feel free to take a look at the [video guide produced by the author himself](https://www.youtube.com/watch?v=8HFQJgyFLHU&t=44s)
+
+If you want an even more detailed look, head on over to [the wiki page](https://wiki.gtnewhorizons.com/wiki/Large_Hadron_Collider), where the wiki team have written an amount of documentation that would make even CERN blush!

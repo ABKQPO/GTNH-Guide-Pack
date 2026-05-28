@@ -18,6 +18,8 @@ date: 2026-05-16
 </GameScene>
 The <Color id="GREEN">Extreme Industrial Greenhouse (EIG)</Color> is an IV tier multiblock for farming thousands of crops without the need for a massive farm. All seeds are grown and harvested within the machine and never physically placed into the world, saving TPS and simplifying logistics. The capacity of the <Color id="GREEN">EIG</Color> is determined by the tier of the energy hatch and therefore the tier of the glass. <Color id="RED">CropsNH</Color> seeds are NOT supported and should be grown in the Industrial Farm instead. Water is required at all times and Weed-EX is required if there are more than 1000 seeds. Otherwise, approximately 1% of seeds are voided with each operation. Fertilizer is optional and boosts the total amount of crops per harvest. 
 
+<br clear="all"/>
+
 > [!NOTE]
 > Not only does the <Color id="GREEN">EIG</Color> now look like... well, a greenhouse, but it has automated land preparation features! After a completed structure check, it will automatically till dirt, and place water blocks inside.
 > It also now fully supports auto-placing using the same methods as other multis!<ItemImage id="structurelib:item.structurelib.constructableTrigger" />

@@ -15,6 +15,7 @@ date: 2026-05-23
   <ImportStructureLib controller="gregtech:gt.blockmachines:15515"/>
 </GameScene>
 The <Color id="GREEN">Mega Chemical Reactor</Color> is an LuV tier multiblock for performing even larger and more advanced chemical reactions. The <Color id="GREEN">MCR</Color> is a direct upgrade from the Large Chemical Reactor<ItemImage id="gregtech:gt.blockmachines:1169"/> because it offers <Color id="RED">256</Color> parallels, supports <Color id="GREEN">Multi-Amp and Laser Energy Hatches</Color> for serious overclocking, and has <Color id="BLUE">unlimited</Color> tier skips. That means it can run any recipe regardless of voltage as long as there is enough power. Expect to only build a few of these because they scale so well. 
+
 <br clear="all"/>
 
 > [!NOTE]
