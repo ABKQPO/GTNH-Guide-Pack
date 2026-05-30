@@ -149,6 +149,7 @@ navigation:
 
 与正常网络不同，自组织网络中的任意位置的智能线缆都会显示整个网络中正在使用的总通道数量，而不是像普通网络那样只显示通过某根特定线缆的通道数量。实际上，在自组织网络中，每个设备都会占用整个网络每一根线缆的的一个频道。这与ME控制器根据最短路径来分配频道的方式截然不同。也就是说在自组织网络中，整个网络均匀的分布了所有设备使用的频道，并没有频道传输路径这种形式。
 
+
 <FloatingImage src="../assets/images/channels_normal_network.png"  wrap="top-bottom" align="left"  width="300" title="普通网络" >
   <ImageAnnotation>
   普通网络
@@ -159,3 +160,4 @@ navigation:
   自组织网络
   </ImageAnnotation>
 </FloatingImage>
+

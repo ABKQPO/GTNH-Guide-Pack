@@ -64,10 +64,6 @@ navigation:
 
 具体的能耗计算请参考[GTNH中文维基](https://gtnh.huijiwiki.com/p/98647)与[MC中文模组百科](https://www.mcmod.cn/item/33471.html)。
 
-# 空间存储元件维度
-空间塔的工作原理是将已选择范围内的整个空间与[空间存储元件](../items-blocks/spatial_cells.md)中的同样大小的空间进行交换。当第一次使用一个新的空间存储元件时，元件会创建一个和其体积规格大小一致的维度。也就是说可以看作每个新的空间存储元件中都是充满空气方块的，第一次使用空间塔进行空间交换会将存储元件中对应大小的空气交换出来。
-
-<Color id="RED">空间存储元件一经使用，你就不能重置、格式化或调整空间存储元件的尺寸。如果想使用不同的尺寸，请制作一个新的元件。</Color>
 
 # 完整的可运行结构
 如果你理解了多方块结构的所有规则，就能看出下面这个结构是合法可运行的。
@@ -81,7 +77,6 @@ navigation:
 </GameScene>
 
 但是它太杂乱、不够简洁。实践时可以参考下面的结构设计：
-
 <GameScene zoom="2" width="300" rotateY={200} >
     <ImportStructure src="../assets/structures/spatial_io-simple.snbt" />
     <BoxAnnotation min="9 0 0" max="5 4 4" color="#EE3333" thickness="1">
@@ -106,8 +101,20 @@ navigation:
 
 一切准备就绪，让我们启动空间IO吧！
 
-<GameScene zoom="3" width="800" height="375" rotateY={30} >
+<GameScene zoom="2" width="400" height="275" rotateY={30}>
     <ImportStructure src="../assets/structures/spatial_io-working.snbt" />
     <ImportPonder src="/assets/ponder/spatial_io-working.json" />
 </GameScene>
 
+# 空间存储元件维度
+空间塔的工作原理是将已选择范围内的整个空间与[空间存储元件](../items-blocks/spatial_cells.md)中的同样大小的空间进行交换。当第一次使用一个新的空间存储元件时，元件会创建一个和其体积规格大小一致的维度。也就是说可以看作每个新的空间存储元件中都是充满空气方块的，第一次使用空间塔进行空间交换会将存储元件中对应大小的空气交换出来。
+
+<Color id="RED">空间存储元件一经使用，你就不能重置、格式化或调整空间存储元件的尺寸。如果想使用不同的尺寸，请制作一个新的元件。</Color>
+
+<GameScene zoom="2" width="400" height="200" rotateY={200} offsetX={-120} offsetY={-60}  allowLayerSlider={false} gridButtonEnabled={false}>
+    <ImportStructure src="../assets/structures/spatial_io-dimension.snbt" />
+    <BoxAnnotation min="-3 2 -2" max="-6 5 1" color="#EE3333" thickness="1">
+    空间存储元件维度
+    </BoxAnnotation>
+    <ImportPonder src="/assets/ponder/spatial_io-dimension.json" />
+</GameScene>
