@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: items-blocks-index.md
+  parent: ../items-blocks-index.md
   title: 成型核心与成型核心
   icon: appliedenergistics2:item.ItemMultiMaterial:43
 categories:
