@@ -61,9 +61,13 @@ Under the following terms:
 
 For full license text, check LICENSE.txt or go to [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Credits
-----
-Thanks to the GT:NH community for inspiration and to all contributors building documentation and tooling to make GT:NH more accessible.
+### Developers
+
+Thanks to the following developers for their contributions to GTNH-Guide-Pack:
+
+<a href="https://github.com/ABKQPO/GTNH-Guide-Pack/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ABKQPO/GTNH-Guide-Pack&max=1000" alt="contributors" />
+</a>
 
 Disclaimer
 ----
