@@ -21,6 +21,7 @@ Spatial IO systems have had some improvements! The changes can be found below:
 > [!NOTE]
 > Spatial Link Chambers use 1 channel for it's own purpose, and allows the sending of 31 channels inside the pocket dimension
 
+
 > [!WARNING]
 > This does __NOT__ fix multidimensional transfer of machines. If you try to move machines or Tile Entities with the spatial system inter-dimensionally, they WILL get corrupted!
 

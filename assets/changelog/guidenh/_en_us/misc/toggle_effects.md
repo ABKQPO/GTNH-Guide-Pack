@@ -2,7 +2,7 @@
 navigation:
   title: Effect Toggling
   parent: misc.md
-  icon: minecraft:potions:8197
+  icon: minecraft:potion:8197
 categories:
     - Miscellaneous Changes
 author: Skorched

@@ -2,7 +2,7 @@
 navigation:
   title: Mechanical Armor
   parent: misc.md
-  icon: TODO
+  icon: minecraft:diamond_chestplate
 categories:
     - Miscellaneous Armor
 author: Skorched

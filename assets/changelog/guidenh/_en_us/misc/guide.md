@@ -54,13 +54,6 @@ The list of features is frankly too long to properly list here, so please accept
 
 <br clear="all"/>
 
-<ColumnChart title="Quarterly Output" categories="Q1,Q2,Q3,Q4" yAxisUnit="t" labelPosition="above">
-  <Series name="Iron" data="120,180,150,210" color="#4E79A7"/>
-  <Series name="Gold" data="30,42,55,48" color="#F28E2B"/>
-</ColumnChart>
-
-<br clear="all"/>
-
 <RecipeFor id="gregtech:gt.blockmachines:15529" input="gregtech:gt.blockmachines:1246"/>
 
 <br clear="all"/>

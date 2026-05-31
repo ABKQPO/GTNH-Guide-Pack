@@ -2,7 +2,7 @@
 navigation:
   title: Fether
   parent: misc.md
-  icon: minecraft:netherrack
+  icon: fether:glow_flower
 categories:
     - Miscellaneous Changes
 author: Skorched
