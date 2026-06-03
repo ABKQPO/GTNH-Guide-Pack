@@ -16,6 +16,8 @@ So much has changed that it can be hard to keep track, even if you actively foll
 > [!NOTE]
 > This is not an exhaustive list of changes in 2.9.x. Between minor bug fixes, and optimisations, there are many things that just cannot fit on this list. This list instead intends to give an idea of some of the *larger* changes or features added in this version.
 
+# Changes
+The changes made can be generally grouped into categories as shown below, however there are some that "overlap" multiple categories. In that case, they will show in both categories:
 ## [Applied Energistics](./ae2/ae2.md)
 ## [CropsNH](./crops/crops.md)
 ## [Magic Changes](./magic/magic.md)
@@ -25,6 +27,6 @@ So much has changed that it can be hard to keep track, even if you actively foll
 ## [Structure Reworks](./reworks/reworks.md)
 
 # What Am I Even Reading?!
-You are currently reading a changelog made via a new mod inclusion, [GuideNH](./misc/guide.md). This mod will (eventually) come with lots of guides on different aspects of the pack, and offers a large range of methods to showcase ideas. For more information, check out the page!
+You are currently reading a changelog made via a new mod inclusion, [GuideNH](./misc/guide.md) in 2.9! This mod will (eventually) come with lots of guides on different aspects of the pack, and offers a large range of methods to showcase ideas. For more information, check out the page!
 
 If you feel you have something to contribute, follow the link on the discord, and find the `#guide-dev` channel to get stuck in!
