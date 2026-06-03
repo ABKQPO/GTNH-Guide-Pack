@@ -20,13 +20,13 @@ Pins are now separated into __Player__ and __Crafting__ sections, both separated
 ## Configurable Amounts
 If you've ever found that the autocrafting amounts seem odd to you, now you can configure them! When looking to autocraft any item, click the wrench in the bottom left to set new values for use in the future!
 
-<FloatingImage src="./assets/GuiAmount.png" align="left" width="256">
+<FloatingImage src="./assets/gui_amount.png" align="left" width="256">
   <ImageAnnotation>
     The config page
   </ImageAnnotation>
 </FloatingImage>
 
-<FloatingImage src="./assets/GuiAmount2.png" align="left" width="256">
+<FloatingImage src="./assets/gui_amount_2.png" align="left" width="256">
   <ImageAnnotation>
     The result of that change
   </ImageAnnotation>

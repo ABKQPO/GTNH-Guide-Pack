@@ -40,7 +40,7 @@ The <Color id="GREEN">LNR</Color> has no tiered components. Buses/hatches may re
 - 0+ Output Hatch (any reactor casing) <ItemImage id="gregtech:gt.blockmachines:70" />
 
 ### Wallsharing
-<FloatingImage src="./assets/LNR-Wallshare.png" width="128" align="right">
+<FloatingImage src="./assets/lnr_wallshare.png" width="128" align="right">
   <ImageAnnotation>
     An example of a dual wallshared reactor
   </ImageAnnotation>
