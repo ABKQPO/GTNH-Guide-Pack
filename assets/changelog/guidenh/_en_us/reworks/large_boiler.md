@@ -19,11 +19,17 @@ date: 2026-05-27
 <GameScene wrap="square" align="right">
   <ImportStructureLib controller="gregtech:gt.blockmachines:15529"/>
 </GameScene>
-The <Color id="GREEN">Large Boiler</Color> is an MV tier multiblock for burning combustible fuels to evaporate water into steam or superheated steam. There are four tiers of the Large Boiler to further improve its efficiency and throughput as better materials are unlocked. Higher density fuels not only burn for longer, but they also receive bonus ticks proportional to their total burn time. The <Color id="GREEN">Large Boiler</Color> ultimately supersedes the Railcraft Boiler <ItemImage id="Railcraft:machine.beta:5"/>, but the bronze version has slightly less maximum throughput. 
+The <Color id="GREEN">Large Boiler</Color> is an MV tier multiblock for burning combustible fuels to evaporate water into steam or superheated steam. There are four tiers of the Large Boiler to further improve its efficiency and throughput as better materials are unlocked. Higher density fuels not only burn for longer, but they also receive bonus ticks proportional to their total burn time. The boilers can accept both solids and fuels, giving a 25% output boost. The <Color id="GREEN">Large Boiler</Color> ultimately supersedes the Railcraft Boiler <ItemImage id="Railcraft:machine.beta:5"/>, but the bronze version has slightly less maximum throughput. 
 <br clear="all"/>
 
 > [!NOTE]
-> No changes have been made to the machine apart from the structure of the multiblock
+> The changes from the previous boilers are as follows (apart from new structure):
+> - Base output increased by 20%
+> - Removed the 25% burn time nerf on diesel fuels
+> - Can consume solid and fluid at the same time for a 25% boost
+> - Added high density diesel fuels to acceptable fuels
+> - Changed the bonus formula to $$\log(\text{Burn Time} \div 16,000) \times 0.025$$
+> - Boilers now lose efficiency at 0.2% per second when turned off
 
 ## Construction
 The <Color id="GREEN">Large Boiler</Color> is available in four tiers but the only structural difference between them is the type of casings and the controller itself. The input and output hatch are limited to the pipe casings anywhere on the structure while the remaining buses/hatches are limited to the regular casings anywhere on the structure. There is no energy hatch because it does not consume power. Use the <ItemLink id="structurelib:item.structurelib.constructableTrigger"/><ItemImage id="structurelib:item.structurelib.constructableTrigger"/> to visualize/build the structure.
@@ -46,6 +52,10 @@ Assuming plates are made in a bending machine and rods are made with a file, a L
 
 ## Usage
 The <Color id="GREEN">Large Boiler</Color> burns combustible fuels to evaporate water into steam or superheated (SH) steam. Higher density fuels naturally burn for longer, but they also receive bonus ticks proportional to their total burn time. Solid fuels with less than 400 burn time are not allowed in the Large Bronze Boiler and solid fuels with less than 1,000 burn time are not allowed in the Large Steel Boiler. Solid super fuel and magic solid super fuel are the only allowed fuels in the Large Titanium Boiler or Large Tungstensteel Boiler.
+
+<Color id="GREEN">Large Boilers</Color> lose efficiency at a rate of 0.2% per second when not running, so aiming for high uptime is ideal. Long burn time fuels are given a boost based on the following fomula:
+
+<Latex formula="\text{Time Bonus} = (\log (\text{Burn Time} \div 16,000) \times 0.025"/>
 
 The rate that water is consumed and the rate at which steam is produced is fixed based on the tier of the machine. However, the Large Bronze Boiler <ItemImage id="gregtech:gt.blockmachines:15529"/> and Large Steel Boiler <ItemImage id="gregtech:gt.blockmachines:15530"/> produce regular steam while the Large Titanium Boiler <ItemImage id="gregtech:gt.blockmachines:15531"/> and Large Tungstensteel Boiler <ItemImage id="gregtech:gt.blockmachines:15532"/> produce superheated (SH) steam. Distilled water may be in used in place of regular water if looping the output of the [Large Steam Turbine](large_steam_turbine.md)<ItemImage id="gregtech:gt.blockmachines:15524"/> back into the Large Boiler. Maintenance issues reduce the amount of steam produced by 10% each.
 

@@ -85,7 +85,7 @@
         {
           "type": "box",
           "minX": 3.05, "minY": 3.3, "minZ": 2.25,
-          "maxX": 4.75, "maxY": 3.7, "maxZ": 2.75,
+          "maxX": 5.75, "maxY": 3.7, "maxZ": 2.75,
           "color": "0xFF0000FF",
           "lineWidth": 1.5,
           "alwaysOnTop": false
