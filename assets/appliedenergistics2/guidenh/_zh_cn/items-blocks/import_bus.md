@@ -8,5 +8,13 @@ categories:
 item_ids:
 - appliedenergistics2:item.ItemMultiPart:240
 - ae2fc:part_fluid_import
+- thaumicenergistics:part.base
 ---
+<Row>
+<ItemImage id="appliedenergistics2:item.ItemMultiPart:240" scale="4"/>
 
+<ItemImage id="ae2fc:part_fluid_import" scale="4"/>
+
+<ItemImage id="thaumicenergistics:part.base" scale="4"/>
+
+</Row>
