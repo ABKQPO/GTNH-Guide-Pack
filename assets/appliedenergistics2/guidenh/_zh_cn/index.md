@@ -4,7 +4,7 @@ item_ids:
 navigation:
   title: 首页
   icon: minecraft:book
-  posion: 100
+  posion: 0
 ---
 
 # 什么是应用能源2（Applied Energistics 2）？

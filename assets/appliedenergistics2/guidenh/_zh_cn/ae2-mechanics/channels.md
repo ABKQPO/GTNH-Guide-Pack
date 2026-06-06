@@ -9,7 +9,7 @@ navigation:
 
 # 频道是什么？
 
-频道是AE网络中的设备占用的一种资源，AE2的[ME网络](me-network-connections.md) 需要通过频道来支持使用网络化存储或其他网络服务的[设备](devices.md)。由[线缆](../items-blocks/cables.md)连接的AE网络中的频道是有限的，每根线缆只能承载有限的频道，当你把一台需要使用频道的设备通过线缆接入网络时，这台设备就会从线缆中占据一个频道，当线缆的频道数量耗尽时，新加入的设备就无法接入AE网络了。
+频道是AE网络中的设备占用的一种资源，AE2的[ME网络](me-network-connections.md) 需要通过频道来支持使用网络化存储或其他网络服务的设备。由[线缆](../items-blocks/cables.md)连接的AE网络中的频道是有限的，每根线缆只能承载有限的频道，当你把一台需要使用频道的设备通过线缆接入网络时，这台设备就会从线缆中占据一个频道，当线缆的频道数量耗尽时，新加入的设备就无法接入AE网络了。
 
 <GameScene zoom="4" background="transparent" width="300" rotateX={20} rotateY={-75}>
   <ImportStructure src="../assets/structures/channels-channel_count.snbt" />
