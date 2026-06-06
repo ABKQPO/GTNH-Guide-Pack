@@ -23,7 +23,7 @@ The <Color id="GREEN">HTGR</Color> is very similar to the <Color id="RED">Thoriu
 <br clear="all"/>
 
 ## Construction:
-The <Color id="GREEN">HGTR</Color> consists of four individual structures. The exact locations of these structures are fixed in reference to the controller and all four are necessary for the structure to form. The large purple sphere is the reactor which has an input bus on top for TRISO balls and and output bus on bottom for burned out TRISO balls <ItemImage id="kubatech:htgr_item_burnerd_triso_fuel:3"/>. The tall vertical structure in the middle is the primary coolant tower which has an input hatch on the side for IC2 coolant and an output hatch on the top for hot coolant. The smaller vertical structure on the edge is the secondary coolant tower which has an input hatch near the top for distilled water and an output hatch near the bottom for steam. The helium input hatch, energy hatch, and maintenance hatch are all limited to the top three casings above the pump at the center of the structure. <Color id="RED">Multi-Amp and Laser Energy Hatches</Color> are not supported and there cannot be more than one regular energy hatch. Use the <ItemLink id="structurelib:item.structurelib.constructableTrigger"/><ItemImage id="structurelib:item.structurelib.constructableTrigger"/> to visualize/build the structure. 
+The <Color id="GREEN">HGTR</Color> consists of four individual structures. The exact locations of these structures are fixed in reference to the controller and all four are necessary for the structure to form. The large purple sphere is the reactor which has an input bus on top for TRISO balls and and output bus on bottom for burned out TRISO balls <ItemImage id="kubatech:htgr_item_burned_triso_fuel:3"/>. The tall vertical structure in the middle is the primary coolant tower which has an input hatch on the side for IC2 coolant and an output hatch on the top for hot coolant. The smaller vertical structure on the edge is the secondary coolant tower which has an input hatch near the top for distilled water and an output hatch near the bottom for steam. The helium input hatch, energy hatch, and maintenance hatch are all limited to the top three casings above the pump at the center of the structure. <Color id="RED">Multi-Amp and Laser Energy Hatches</Color> are not supported and there cannot be more than one regular energy hatch. Use the <ItemLink id="structurelib:item.structurelib.constructableTrigger"/><ItemImage id="structurelib:item.structurelib.constructableTrigger"/> to visualize/build the structure. 
 
 ### Requires:
 - 1 <ItemLink id="gregtech:gt.blockmachines:12791"/><ItemImage id="gregtech:gt.blockmachines:12791"/>
@@ -70,7 +70,7 @@ The efficiency cannot be increased while the machine is active and cannot exceed
 
 
 <FunctionGraph title="Efficiency of HGTR base on stored TRISO Balls" xRange="0..10000" domain="0..100" xLabel="TRISO Balls" yLabel="Efficiency (%)"> 
-<Plot expr="0.1 + 0.9 * (1 - (1 - (x)/(10000))^3)" color="#ff55ff"/>
+<Plot expr="0.1 + 0.9 * (1 - (1 - (x)/(10000))^3) * 100" color="#ff55ff"/>
 </FunctionGraph>
 
 
