@@ -23,6 +23,6 @@ In an effort to consolidate the inventory, the __Tinker's Inventory Tab__ has be
 
 <FloatingImage src="./assets/baubles.png" wrap="square" align="left" width="256">
   <ImageAnnotation>
-    An example of some baubles in their new homes
+    An example of some baubles in their new homes! *Ranzu says hi!*
   </ImageAnnotation>
 </FloatingImage>
